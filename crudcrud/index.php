@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        
+    </style>
+    <body>
+    <form action="" method="post">
+        <label >
+            Name of task
+            <input type="text" name="name" required >
+        </label>
+        <label >
+            description
+            <input type="textarea" name="last" required>
+
+            <textarea>
+                
+            </textarea>
+        </label>
+        <label >
+           estimate
+     
+            <input type="radio"name="gender" value="male"required>
+          
+            </label>
+
+            <label ><br>
+            <input type="radio"name="gender" value="female" required>
+            female
+            </label><br>
+            
+        </label>
+        
+        <label >
+            
+            <input type="submit"name="create" value="create" required>
+
+        </label>
+
+    </form>
+    </body>
+</html>

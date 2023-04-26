@@ -1,0 +1,105 @@
+html body {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.968627451);
+  color: wheat;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: grid;
+  grid-template-areas: "box1 box1 box1" "box2 box3 box3" "box2 box3 box3" "box4 box4 box4";
+  grid-template-rows: 70px 1fr 1fr 50px;
+}
+html body .header {
+  display: grid;
+  grid-area: box1;
+  background: red;
+}
+html body .form {
+  display: grid;
+  grid-area: box2;
+  background: rgb(0, 255, 89);
+}
+html body .container-table {
+  display: grid;
+  grid-area: box3;
+  background: rgb(0, 81, 255);
+}
+html body .container-table .card-container {
+  border: 2px solid black;
+  margin: 10px;
+  background: rgba(192, 187, 187, 0.3647058824);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-left: 40px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  row-gap: 10px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+html body .container-table .card {
+  border: 2px solid rgb(255, 192, 251);
+  width: 250px;
+  height: 250px;
+  background: pink;
+  color: black;
+  border-radius: 5px;
+  /*  margin: 20px 0px 0px 30px ; */
+  display: grid;
+  grid-template-areas: " img img  edit" " img img  brand" " img img  product";
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: 20px auto auto;
+}
+html body .container-table .card .img {
+  background: red;
+  grid-area: img;
+}
+html body .container-table .card .med-name {
+  background: rgb(255, 0, 174);
+  grid-area: brand;
+  font-weight: bolder;
+  font-size: 17px;
+}
+html body .container-table .card .product-name {
+  background: rgb(0, 255, 64);
+  grid-area: product;
+}
+html body .container-table .card .edit-delete {
+  background: rgb(0, 234, 255);
+  grid-area: edit;
+  display: grid;
+}
+html body .container-table .card .edit-delete .botton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 5px;
+  margin: 0;
+}
+html body .container-table .card .edit-delete .botton input[type=submit] {
+  width: auto;
+  height: auto;
+  padding-right: 1px;
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: gray;
+  opacity: 0.7;
+  transition: 0.7s;
+  /*  display: flex;
+   flex-direction: column; */
+}
+html body .container-table .card .edit-delete input[type=submit]:hover {
+  opacity: 1;
+  color: black;
+}
+html body .footer {
+  display: grid;
+  place-items: center;
+  grid-area: box4;
+  background: rgb(255, 85, 0);
+}/*# sourceMappingURL=med.css.map */

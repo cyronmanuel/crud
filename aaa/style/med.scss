@@ -1,0 +1,150 @@
+
+
+
+html body{
+    margin: 0;
+    padding: 0;
+    background: #000000f7;
+    color: wheat;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    // layout
+    display: grid;
+    grid-template-areas: 
+    "box1 box1 box1"
+    "box2 box3 box3"
+    "box2 box3 box3"
+    "box4 box4 box4"
+    ;
+    grid-template-rows:70px  1fr 1fr  50px ;
+   
+    
+    .header{
+        display: grid;
+        grid-area: box1;
+        background: red;
+    }
+    .form{
+        display: grid;
+        grid-area: box2;
+        background: rgb(0, 255, 89);
+    }
+    .container-table{
+        display: grid;
+        grid-area: box3;
+        background: rgb(0, 81, 255);
+   
+     
+        
+        .card-container{
+            border: 2px solid black;
+            margin: 10px;
+            background: #c0bbbb5d;
+            overflow-x:auto;
+            scrollbar-width: none;
+            padding-left: 40px;
+            padding-top: 20px;
+            
+            // layout
+            display: grid;
+            grid-template-columns: repeat( auto-fit , 220px);
+            row-gap: 10px;
+            column-gap: 50px;
+           
+           
+          
+        }
+
+    
+        .card{
+           
+           border: 2px solid rgb(255, 192, 251);
+           width: 250px;
+           height: 250px;
+           background: pink;
+           color: black;
+           border-radius: 5px;
+          /*  margin: 20px 0px 0px 30px ; */
+      
+        
+
+          
+        
+       
+           display: grid;
+           grid-template-areas: 
+           " img img  edit"
+           " img img  brand"
+           " img img  product"
+          
+           ;
+           grid-template-columns: 50px 1fr 1fr;
+           grid-template-rows: 20px auto auto;
+          
+              
+           .img{
+            background: red;
+            grid-area: img;
+           }
+           .med-name{
+            background: rgb(255, 0, 174);
+            grid-area: brand;
+            font-weight: bolder;
+            font-size: 17px;
+           }
+           .product-name{
+            background: rgb(0, 255, 64);
+            grid-area: product;
+           }
+           .edit-delete{
+            background: rgb(0, 234, 255);
+            grid-area: edit;
+            display:grid;
+            
+            
+             
+            .botton{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-right: 5px;
+                margin: 0;
+
+                input[type=submit]{
+                width: auto;
+                height: auto;
+                padding-right: 1px;
+                margin: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border: none;
+                background: none;
+                cursor: pointer;
+                color: gray;
+                opacity: .7;
+                transition: .7s;
+               /*  display: flex;
+                flex-direction: column; */
+                
+                
+             }
+            }
+        
+           
+            input[type=submit]:hover{
+                opacity: 1;
+                color: black;
+                
+             }
+           }
+        }
+    }
+    .footer{
+        display: grid;
+         place-items: center;
+        grid-area: box4;
+        background: rgb(255, 85, 0);
+    }
+
+}

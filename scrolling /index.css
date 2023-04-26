@@ -1,0 +1,92 @@
+html body {
+  padding: 0;
+  margin: 0;
+  background: rgb(0, 0, 0);
+}
+html body section:nth-child(1) {
+  background: #aa4e4e;
+  height: 100vh;
+  border: 1px solid red;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: rgb(164, 242, 164);
+}
+html body section:nth-child(1) button {
+  background: rgb(131, 146, 189);
+  border: none;
+  width: 40em;
+  height: 50px;
+  transition: 1.5s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  position: sticky;
+  top: 0;
+}
+html body section:nth-child(1) button:hover {
+  background: #063772;
+}
+html body section:nth-child(1) button:active {
+  background: rgb(57, 255, 120);
+  transition: 0.5s;
+}
+html body section:nth-child(2) {
+  height: 100vh;
+  border: 1px solid red;
+  font-size: 30px;
+}
+html body section:nth-child(2) blockquote {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: blue;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+}
+html body section:nth-child(3) {
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: wheat;
+}
+html body section:nth-child(odd) {
+  height: 100vh;
+  background: rgb(108, 123, 210);
+  border: 1px solid red;
+}
+html body .box {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+img:nth-child(1) {
+  left: 300px;
+  width: 400px;
+  border: 10px solid rgb(14, 111, 208);
+  position: relative;
+  z-index: -1;
+  background-size: fr;
+}
+
+img:nth-child(2) {
+  left: 300px;
+  position: relative;
+  z-index: -1;
+  size: 1fr;
+}
+
+img:nth-child(3) {
+  background-size: cover;
+  height: 100%;
+  height: 400px;
+  position: relative;
+  z-index: -1;
+}
+
+img:nth-child(4) {
+  top: -21em;
+  left: -300px;
+  width: 400px;
+  border-radius: 100%;
+  border: 10px solid rgb(32, 108, 129);
+  position: relative;
+}/*# sourceMappingURL=index.css.map */
